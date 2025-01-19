@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+    height: 100%;
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
+
+@font-face{
+    font-family: "earth";
+    src:local("earth"),
+    url('./assets/fonts/earth.ttf') 
+  }
+  
+@font-face{
+    font-family: "inter_semibold";
+    src:local("inter_semibold"),
+    url('./assets/fonts/inter_semibold.otf') 
+  }
+  
