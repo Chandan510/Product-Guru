@@ -123,7 +123,7 @@ def search():
     
     return jsonify({"question": query, "answer": message})
 
+application = app
 
 if __name__ == "__main__":
-    app.run(debug=False)
-    
+    app.run()
